@@ -1,0 +1,8 @@
+{
+  "name": "AngularJSNodeRESTful",
+  "description": "simple beginning angular js app with nodejs driven RESTful service", 
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "3.x"
+  }
+}
