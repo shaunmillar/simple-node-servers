@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+ var name = 'shaun'; 
+ var address = '1223 somestreet'; 
+    $("#button").click(function(){
+        $.post("post_test",
+        {
+          name: name,
+          address: address
+        },
+        function(data,status){
+            alert("Success. Data returned from server: " + data + "\nStatus: " + status);
+        })
+        .error(function() {
+        		alert('Internal Server Error'); 	
+        	});        
+    });
+});
+</script>
+</head>
+<body>
+<h1>Post test</h1>
+<input id="button" type="button" value="Click to post"></input>
+</body>
+</html>

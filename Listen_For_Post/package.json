@@ -1,0 +1,9 @@
+{
+  "name": "NodeJS_POST",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A simple project demonstrating how to listen for an HTTP POST using node js.",
+  "dependencies": {
+    "util": "^0.10.3"
+  }
+}
